@@ -7,9 +7,12 @@
   //
 
   /////////////////////////////////////////////////////////////////////
-  // The ajax file uplaoder is provided for your convenience!
+  // The ajax file uploader is provided for your convenience!
   // Note: remember to fix the URL below.
   /////////////////////////////////////////////////////////////////////
+
+
+  // push this to server and have the server push it to the front end
 
   const ajaxFileUplaod = (file) => {
     var formData = new FormData();

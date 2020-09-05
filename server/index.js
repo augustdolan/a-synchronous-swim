@@ -2,6 +2,7 @@
 
 
 const keypressHandler = require('./js/keypressHandler');
+// utilize this to send to client? Aug
 keypressHandler.initialize(message => console.log(`Message received: ${message}`));
 
 const httpHandler = require('./js/httpHandler');
