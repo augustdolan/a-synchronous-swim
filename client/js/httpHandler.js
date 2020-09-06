@@ -6,6 +6,17 @@
   // TODO: build the swim command fetcher here
   //
 
+  const moveTeam = () => { $.get(
+    serverUrl,
+    (data) => {
+      SwimTeam.move(data.toLowerCase()
+      )
+    }
+    )};
+  const getBackground = () => $.get(`${serverUrl}/background.jpg`);
+  getBackground();
+  setInterval(moveTeam, 1000);
+
   /////////////////////////////////////////////////////////////////////
   // The ajax file uploader is provided for your convenience!
   // Note: remember to fix the URL below.
@@ -20,7 +31,7 @@
     $.ajax({
       type: 'POST',
       data: formData,
-      url: 'FILL_ME_IN',
+      url: `${serverUrl}/background.jpg`,
       cache: false,
       contentType: false,
       processData: false,
